@@ -25,7 +25,7 @@ def on_message(client, userdata, msg):
 
 def main():
     client = mqtt.Client(CLIENT_NAME)
-    client.on_connect = on_connect
+    #client.on_connect = on_connect
     client.on_message = on_message
 
     client.connect(host=BROKER_HOST, port=BROKER_PORT)
